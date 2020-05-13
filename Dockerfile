@@ -5,12 +5,12 @@ FROM golang:1.14
 FROM golang
 
 # Copy the local package files to the container's workspace.
-ADD ./src /go/src/github.com/timonvw/go-test/bin
+ADD ./src /go/src/github.com/timonvw/Go-Test/bin
 
 # Build the bin command inside the container.
 # (You may fetch or manage dependencies here,
 # either manually or with a tool like "godep".)
-WORKDIR /go/src/github.com/timonvw/go-test/bin
+WORKDIR /go/src/github.com/timonvw/Go-Test/bin
 
 RUN go get ./
 RUN go build
